@@ -1,6 +1,5 @@
 import { ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-// import { EffectComposer, Noise } from "@react-three/postprocessing";
 import { Experience } from "./components/Experience";
 import { Overlay } from "./components/Overlay";
 import { usePlay } from "./contexts/Play";
@@ -28,9 +27,6 @@ function App() {
         >
           <Experience />
         </ScrollControls>
-        {/* <EffectComposer>
-          <Noise opacity={0.2} />
-        </EffectComposer> */}
       </Canvas>
       <Overlay />
     </>

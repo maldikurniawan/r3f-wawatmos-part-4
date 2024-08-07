@@ -1,9 +1,18 @@
 import { useProgress } from "@react-three/drei";
 import { usePlay } from "../contexts/Play";
+import React from "react";
 
 export const Overlay = () => {
   const { progress } = useProgress();
   const { play, end, setPlay, hasScroll } = usePlay();
+
+  // Redirect to an external URL when end is true
+  React.useEffect(() => {
+    if (end) {
+      window.location.href = "https://maldikurniawan.github.io/random_app/"; // Replace with your external URL
+    }
+  }, [end]);
+
   return (
     <div
       className={`overlay ${play ? "overlay--disable" : ""}

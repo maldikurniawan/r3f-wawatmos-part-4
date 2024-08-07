@@ -3,7 +3,7 @@ const replaceFragmentShader = (fragmentShader) =>
     .replace(
       `#include <common>`,
       `#include <common>
-  float exponentialEasing(float x, float a) {
+      float exponentialEasing(float x, float a) {
   
     float epsilon = 0.00001;
     float min_param_a = 0.0 + epsilon;
@@ -26,12 +26,12 @@ const replaceFragmentShader = (fragmentShader) =>
     .replace(
       `vec4 diffuseColor = vec4( diffuse, opacity );`,
       `
-float fadeDist = 350.0;
-float dist = length(vViewPosition);
+      float fadeDist = 350.0;
+      float dist = length(vViewPosition);
 
-float fadeOpacity = smoothstep(fadeDist, 0.0, dist);
-fadeOpacity = exponentialEasing(fadeOpacity, 0.93);
-vec4 diffuseColor = vec4( diffuse, fadeOpacity * opacity );`
+      float fadeOpacity = smoothstep(fadeDist, 0.0, dist);
+      fadeOpacity = exponentialEasing(fadeOpacity, 0.93);
+      vec4 diffuseColor = vec4( diffuse, fadeOpacity * opacity );`
     );
 
 export const fadeOnBeforeCompile = (shader) => {
