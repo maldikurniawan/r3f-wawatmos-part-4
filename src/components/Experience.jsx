@@ -49,7 +49,7 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `Welcome to Wawatmos,
+        subtitle: `Welcome to My Portfolio,
 Have a seat and enjoy the ride!`,
       },
       {
@@ -59,9 +59,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "Introduction",
+        subtitle: `My name is Aldi. Im a fresh graduate. I got my bachelors degree in Informatics Engineering at Lampung University.`,
       },
       {
         cameraRailDist: -1,
@@ -70,8 +69,8 @@ We have a wide range of beverages!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
+        title: "Skill",
+        subtitle: `Proficient in HTML, CSS, and JavaScript. Extensive experience with React. Adept at using Git for version control. Skilled in collaborating with back-end developers to integrate APIs.`,
       },
       {
         cameraRailDist: 1.5,
@@ -80,8 +79,8 @@ We have a wide range of beverages!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Movies",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        title: "Experience",
+        subtitle: `I have crafted visually engaging and highly functional web interfaces, consistently delivering exceptional user experiences.`,
       },
     ];
   }, []);
